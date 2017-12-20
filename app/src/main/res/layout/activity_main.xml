@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.layout.blinking.MainActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="81dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:background="#d6cbcb"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="This is fadein animation"
+        android:textSize="30dp"
+        android:textColor="#ed99d1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="START ANIMATION"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="166dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="106dp" />
+</RelativeLayout>
+    <!--
+       RelativeLayout enables you to specify how child views are positioned relative to each other. The position of each view can be
+        specified as relative to sibling elements or relative to the parent.
+      The TextView is an Android control used to build the GUI and it have various attributes
+          ID-Any View object may have an integer ID associated with it, to uniquely identify the View within the tree.
+          When the application is compiled, this ID is referenced as an integer, but the ID is typically assigned in the layout XML file
+          as a string, in the id attribute.This is an XML attribute common to all View objects (defined by the View class) and you will use
+          it very often
+          wrap_content tells your view to size itself to the dimensions required by its content.
+          match_parent tells your view to become as big as its parent view group will allow.
+          gravity means the postion of textview
+          background means color of the screen
+          textColor means color of the text
+          textSize means size of the text
+          -->
